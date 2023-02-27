@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E426A8B923697ADA00326A8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426A8B823697ADA00326A8B /* AppDelegate.swift */; };
-		E426A8BB23697ADA00326A8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426A8BA23697ADA00326A8B /* SceneDelegate.swift */; };
+		E426A8B923697ADA00326A8B /* VoiceRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426A8B823697ADA00326A8B /* VoiceRecorderApp.swift */; };
 		E426A8BD23697ADA00326A8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426A8BC23697ADA00326A8B /* ContentView.swift */; };
 		E426A8BF23697ADB00326A8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E426A8BE23697ADB00326A8B /* Assets.xcassets */; };
 		E426A8C223697ADB00326A8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E426A8C123697ADB00326A8B /* Preview Assets.xcassets */; };
@@ -24,8 +23,7 @@
 
 /* Begin PBXFileReference section */
 		E426A8B523697ADA00326A8B /* Voice Recorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voice Recorder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E426A8B823697ADA00326A8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E426A8BA23697ADA00326A8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E426A8B823697ADA00326A8B /* VoiceRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderApp.swift; sourceTree = "<group>"; };
 		E426A8BC23697ADA00326A8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E426A8BE23697ADB00326A8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E426A8C123697ADB00326A8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -71,12 +69,11 @@
 		E426A8B723697ADA00326A8B /* Voice Recorder */ = {
 			isa = PBXGroup;
 			children = (
-				E426A8B823697ADA00326A8B /* AppDelegate.swift */,
-				E426A8D023697F3300326A8B /* AudioRecorder.swift */,
-				E426A8DC236988B500326A8B /* AudioPlayer.swift */,
-				E426A8BA23697ADA00326A8B /* SceneDelegate.swift */,
+				E426A8B823697ADA00326A8B /* VoiceRecorderApp.swift */,
 				E426A8BC23697ADA00326A8B /* ContentView.swift */,
 				E426A8D223697F5100326A8B /* RecordingsList.swift */,
+				E426A8D023697F3300326A8B /* AudioRecorder.swift */,
+				E426A8DC236988B500326A8B /* AudioPlayer.swift */,
 				E426A8D82369832800326A8B /* RecordingDataModel.swift */,
 				E426A8D4236981A700326A8B /* Extensions.swift */,
 				E426A8DA236983F100326A8B /* Helper.swift */,
@@ -123,7 +120,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1110;
+				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = Pinlun;
 				TargetAttributes = {
 					E426A8B423697ADA00326A8B = {
@@ -168,11 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E426A8B923697ADA00326A8B /* AppDelegate.swift in Sources */,
+				E426A8B923697ADA00326A8B /* VoiceRecorderApp.swift in Sources */,
 				E426A8D5236981A700326A8B /* Extensions.swift in Sources */,
 				E426A8DD236988B500326A8B /* AudioPlayer.swift in Sources */,
 				E426A8D92369832800326A8B /* RecordingDataModel.swift in Sources */,
-				E426A8BB23697ADA00326A8B /* SceneDelegate.swift in Sources */,
 				E426A8D323697F5100326A8B /* RecordingsList.swift in Sources */,
 				E426A8D123697F3400326A8B /* AudioRecorder.swift in Sources */,
 				E426A8BD23697ADA00326A8B /* ContentView.swift in Sources */,
@@ -220,6 +216,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -280,6 +277,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -314,9 +312,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Voice Recorder/Preview Content\"";
-				DEVELOPMENT_TEAM = 9T6FY44K7H;
+				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Voice Recorder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +333,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Voice Recorder/Preview Content\"";
-				DEVELOPMENT_TEAM = 9T6FY44K7H;
+				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Voice Recorder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
